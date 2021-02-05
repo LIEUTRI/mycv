@@ -1,16 +1,18 @@
 import React from 'react';
 import profile from '../assets/img/profile.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  faFacebookF , faYoutube, faGithub} from '@fortawesome/free-brands-svg-icons';
 
 class Content extends React.Component{
 
     render() {
         return(
-            <div className="page-top">
+            <div>
                 {/*Navigation*/}
                 <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
                     <a className="navbar-brand js-scroll-trigger" href="#">
                         <span className="d-block d-lg-none">Clarence Taylor</span>
-                        <span className="d-none d-lg-block"><img className="img-fluid img-profile rounded-circle mx-auto mb-2" src={profile} alt="" /></span>
+                        <span className="d-none d-lg-block"><img className="img-fluid img-profile rounded-circle mx-auto mb-2" src={profile} alt="profile image" /></span>
                     </a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -31,19 +33,21 @@ class Content extends React.Component{
                     <section className="resume-section" id="about">
                         <div className="resume-section-content">
                             <h1 className="mb-0">
-                                Clarence
-                                <span className="text-primary">Taylor</span>
+                                Minh Tri
+                                <span className="text-primary"> Lieu</span>
                             </h1>
                             <div className="subheading mb-5">
-                                3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
+                                Cai Rang District · Can Tho City · (+84) 352161220 ·
                                 <a href="mailto:lieutri98@gmail.com">lieutri98@gmail.com</a>
                             </div>
                             <p className="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
                             <div className="social-icons">
-                                <a className="social-icon" href="#"><i className="fab fa-linkedin-in"></i></a>
-                                <a className="social-icon" href="#"><i className="fab fa-github"></i></a>
-                                <a className="social-icon" href="#"><i className="fab fa-twitter"></i></a>
-                                <a className="social-icon" href="#"><i className="fab fa-facebook-f"></i></a>
+                                <a className="social-icon" target="_blank" rel="noopener noreferrer"
+                                   href="https://github.com/LIEUTRI"><FontAwesomeIcon icon={faGithub}/></a>
+                                <a className="social-icon" target="_blank" rel="noopener noreferrer"
+                                   href="https://www.facebook.com/lieumtri"><FontAwesomeIcon icon={faFacebookF}/></a>
+                                <a className="social-icon" target="_blank" rel="noopener noreferrer"
+                                   href="https://www.youtube.com/channel/UCR6GYnWiw26ZTxZVPQINaKA"><FontAwesomeIcon icon={faYoutube}/></a>
                             </div>
                         </div>
                     </section>

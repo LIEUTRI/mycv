@@ -12,7 +12,7 @@ import './js/scripts'
 function App() {
   return (
     <div className="App">
-      <Content/>
+      <Content className="page-top"/>
     </div>
   );
 }
